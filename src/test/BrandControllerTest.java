@@ -1,9 +1,11 @@
 package test;
 
-import controllers.BrandController;
 import models.Brand;
 import validaciones.Validators;
 import org.junit.jupiter.api.Test;
+
+import controllerss.BrandController;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import java.io.BufferedReader;
@@ -157,8 +159,8 @@ public class BrandControllerTest {
             Validators.validarBusquedaExitosa(resultado1, 8);
 
             // Búsqueda 2: 10 años (no existe) - ordenado descendente
-            Brand resultado2 = invocarBusquedaBinaria(paraOrdenar, 10, false);
-            Validators.validarBusquedaFallida(resultado2, 10);
+            Brand resultado2 = invocarBusquedaBinaria(paraOrdenar, 17, false);
+            Validators.validarBusquedaFallida(resultado2, 17);
 
         } else if (fila.equals("B")) {
             // Fila B: Selection Sort Ascendente

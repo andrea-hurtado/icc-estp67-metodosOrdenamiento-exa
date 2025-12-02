@@ -1,0 +1,30 @@
+package models;
+
+public class CarYear {
+
+    private int year;
+    public boolean isValid;
+    
+    public CarYear(int year, boolean isValid) {
+        this.year = year;
+        this.isValid = isValid;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
+    }
+
+    public boolean isValid() {
+        return isValid;
+    }
+
+    public void setValid(boolean isValid) {
+        this.isValid = isValid;
+    }
+
+
+}
